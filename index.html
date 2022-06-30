@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+  <title>Document</title>
+  <style>
+        body {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+  </style>
+</head>
+
+<body>
+
+  
+  <script>
+    const div = document.createElement("div");
+    const p = document.createElement("p");
+    document.body.prepend(div);
+    div.prepend(p);
+    div.style.border = "1px solid red";
+    div.style.borderRadius = "10px";
+    div.style.width = "350px";
+    p.style.paddingLeft = "20px";
+
+    p.textContent = "Lorem ipsum, dolor sit ament consectetur adipisicing, elit. Voluptatem incidunt cumque in! In omnis repellendus.";
+
+
+
+    const div2 = document.createElement("div");
+ 
+    const a1 = document.createElement("a");
+    const a2 = document.createElement("a");
+    const a3 = document.createElement("a");
+
+    a1.textContent = "intocode";
+    a1.href = "https://github.com/intocode";
+
+    a2.textContent = "google";
+    a2.href = "https://github.com/intocode";
+
+    a3.textContent = "instagram";
+    a3.href ="https://instagram.com/intocode?igshid=YmMyMTA2M2Y=";
+
+    div2.append(a1, a2, a3);
+    document.body.append(div2);
+    div2.style.display = "flex";
+    div2.style.width = '350px';
+    div2.style.justifyContent ='space-between'
+
+  </script>
+</body>
+</html>
